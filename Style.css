@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.leading{
+    width: 100%;
+    height: 70vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 38%, rgba(0,212,255,1) 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leading h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10%;
+}
+
+.leading svg {
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+  }
+
+.oneseccion {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* border: #007BFF solid 1px; */
+}
+
+.twoseccion {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* border: #007BFF solid 1px; */
+}
+
+.treeseccion {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* border: #007BFF solid 1px; */
+}
+
+.forseccion{
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* border: #007BFF solid 1px; */
+}
+
+
+
+.carousel {
+    height: auto;
+    max-width: 90%;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.245);
+    background: white;
+}
+
+.carousel h2{
+    color: #007BFF;
+    margin-left: 10px;
+}
+
+.cards {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.181);
+    margin: 0 10px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.card-img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #007BFF;
+}
+
+.card p {
+    color: gray;
+    font-size: 14px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #007BFF; 
+}
+
+@media (max-width: 768px) {
+    .leading{
+        height: 90vh;
+    }
+    .leading h1{
+        line-height: 30px;
+        font-size: 24px;
+    }
+    .oneseccion {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .twoseccion {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .treeseccion {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .forseccion {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .card {
+        min-width: auto;
+    }
+
+    .controls {
+        width: 90%;
+    }
+    
+    .carousel h2{
+        font-size: 16px;
+    }
+    .card h3 {
+        font-size: 16px;
+    }
+}
